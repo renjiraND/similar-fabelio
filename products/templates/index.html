@@ -1,0 +1,17 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'products/styles.css' %}">
+<h1>Recommended Products</h1>
+<form action='reset' method='POST'>
+    <button type='submit'>reset</button>
+</form>
+{% if chosen %}
+    <div class="card">
+        <img src={{chosen.image}} alt={{chosen.product_name}}/>
+        <h3>{{ chosen.product_name }}</h3>
+        <p>{{ chosen.price }}</p>
+        <p>{{ chosen.colours }}</p>
+    </div>
+{% else %}
+    <p>No products are available.</p>
+{% endif %}
