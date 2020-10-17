@@ -27,4 +27,4 @@ def ready():
     out.in_stock = False
     out.save()
 
-ready()
+# ready()
