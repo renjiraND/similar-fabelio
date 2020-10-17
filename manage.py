@@ -7,7 +7,7 @@ import csv
 
 def main():
     """Run administrative tasks."""
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'similar-jira.settings')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'similar.settings')
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:

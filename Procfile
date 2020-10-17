@@ -1,1 +1,1 @@
-web: gunicorn similar-jira.wsgi --log-file -
+web: gunicorn similar.wsgi --log-file -
