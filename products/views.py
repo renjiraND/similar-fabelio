@@ -3,10 +3,7 @@ from django.http import HttpResponseRedirect
 from django.views.decorators.csrf import csrf_exempt
 from .models import Products
 from difflib import SequenceMatcher
-import locale
 import csv
-
-locale.setlocale(locale.LC_ALL,"id_ID.UTF-8")
 
 def get_or_none(model, *args, **kwargs):
     try:
@@ -31,7 +28,6 @@ def index(request):
         change.seen = True
         change.save()
         chosen_product = products[chosen]
-        chosen_product.price = locale.currency(chosen_product.price)
     else:
         chosen_product = None
     context = {
