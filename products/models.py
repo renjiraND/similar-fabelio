@@ -9,4 +9,5 @@ class Products(models.Model):
     material = models.CharField(max_length=50)
     image = models.CharField(max_length=300)
     seen = models.BooleanField(default=False)
+    in_stock = models.BooleanField(default=False)
 

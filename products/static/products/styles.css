@@ -3,14 +3,7 @@ html {
     font-family: "Comic Sans MS",Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-img {
-    height: 100px;
-    border-radius: 10px;
-}
-
 .card {
-    text-align: center;
-    background-color: rgb(211, 166, 98);
-    border: 1px solid black;
-    border-radius: 10px;
+    width: 50% !important;
+    margin: auto;
 }
