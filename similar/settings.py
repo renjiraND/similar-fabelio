@@ -52,7 +52,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'similar.urls'
+ROOT_URLCONF = 'similar-jira.urls'
 
 TEMPLATES = [
     {
@@ -70,7 +70,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'similar.wsgi.application'
+WSGI_APPLICATION = 'similar-jira.wsgi.application'
 
 
 # Database
@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'similar.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'similar',
+        'NAME': 'similar-jira',
         'USER': 'renjira',
         'PASSWORD': 'qwerty',
         'HOST': 'localhost',
